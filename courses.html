@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurslar - Azimova School | Til O'rganish Markazi</title>
+    <meta name="description" content="Azimova School kurslar - Ingliz, rus, xitoy, koreys va arab tillari kurslari. IELTS, TOPIK, HSK tayyorgarlik.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Onest:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-animation"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">📚 <span>Azimova School</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Bosh sahifa</a></li>
+                <li><a href="courses.html" class="active">Kurslar</a></li>
+                <li><a href="about.html">Biz haqimizda</a></li>
+                <li><a href="contact.html">Aloqa</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="tel:+998901234567" class="nav-phone">📞 +998 90 123 45 67</a>
+                <a href="contact.html" class="btn btn-primary btn-sm">Ro'yxatdan o'tish</a>
+            </div>
+            <div class="mobile-menu-btn" id="mobileMenuBtn"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu-overlay" id="mobileOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-menu-close" id="mobileClose">×</button>
+        <div class="mobile-logo">📚 Azimova School</div>
+        <ul>
+            <li><a href="index.html">Bosh sahifa</a></li>
+            <li><a href="courses.html">Kurslar</a></li>
+            <li><a href="about.html">Biz haqimizda</a></li>
+            <li><a href="contact.html">Aloqa</a></li>
+        </ul>
+    </div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Bosh sahifa</a> / <span>Kurslar</span>
+            </div>
+            <h1>Bizning <span class="gradient-text">Kurslarimiz</span></h1>
+            <p>5 ta til, 20+ kurs dasturi, professional ustozlar va kafolatlangan natija</p>
+        </div>
+    </section>
+
+    <!-- Course Filter -->
+    <section class="course-filter">
+        <div class="container">
+            <div class="filter-tabs">
+                <button class="filter-tab active" onclick="filterCourses('all')">Barchasi</button>
+                <button class="filter-tab" onclick="filterCourses('english')">🇬🇧 Ingliz</button>
+                <button class="filter-tab" onclick="filterCourses('russian')">🇷🇺 Rus</button>
+                <button class="filter-tab" onclick="filterCourses('chinese')">🇨🇳 Xitoy</button>
+                <button class="filter-tab" onclick="filterCourses('korean')">🇰🇷 Koreys</button>
+                <button class="filter-tab" onclick="filterCourses('arabic')">🇸🇦 Arab</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ENGLISH COURSES ==================== -->
+    <section class="course-section" id="english">
+        <div class="container">
+            <div class="course-section-header" data-aos="fade-up">
+                <div class="course-lang-icon">🇬🇧</div>
+                <div>
+                    <h2>Ingliz tili kurslari</h2>
+                    <p>Xalqaro sertifikatlar va biznes ingliz tili • 200+ faol o'quvchi</p>
+                </div>
+            </div>
+
+            <div class="courses-grid">
+                <!-- General English Beginner -->
+                <div class="course-card" data-aos="fade-up" data-category="english">
+                    <div class="course-card-header">
+                        <span class="course-level beginner">Boshlang'ich</span>
+                        <span class="course-duration">📅 3-4 oy</span>
+                    </div>
+                    <h3>General English - Beginner</h3>
+                    <p>Ingliz tilini noldan boshlash uchun ideal kurs. Grammatika, so'zlashuv, tinglash va yozish ko'nikmalari.</p>
+                    <div class="course-info">
+                        <div class="info-item">📚 <span>48 dars</span></div>
+                        <div class="info-item">👥 <span>8-10 kishi</span></div>
+                        <div class="info-item">🕐 <span>Haftada 3 kun</span></div>
+                    </div>
+                    <div class="course-curriculum">
+                        <h4>📋 Kurs dasturi:</h4>
+                        <ul>
+                            <li>✓ Alifbo va talaffuz asoslari</li>
+                            <li>✓ Present Simple, Past Simple, Future</li>
+                            <li>✓ Kundalik so'zlashuv (tanishuv, oila, ish)</li>
+                            <li>✓ 1500+ so'z lug'at boyitish</li>
+                            <li>✓ Audio va video materiallar</li>
+                        </ul>
+                    </div>
+                    <div class="course-footer">
+                        <div class="course-price">
+                            <small>Oylik to'lov</small>
+                            <strong>800,000 so'm</strong>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Yozilish →</a>
+                    </div>
+                </div>
+
+                <!-- General English Intermediate -->
+                <div class="course-card" data-aos="fade-up" data-aos-delay="100" data-category="english">
+                    <div class="course-card-header">
+                        <span class="course-level intermediate">O'rta</span>
+                        <span class="course-duration">📅 4-5 oy</span>
+                    </div>
+                    <h3>General English - Intermediate</h3>
+                    <p>O'rta darajadagi o'quvchilar uchun. Murakkab grammatika va erkin so'zlashuv ko'nikmalari.</p>
+                    <div class="course-info">
+                        <div class="info-item">📚 <span>60 dars</span></div>
+                        <div class="info-item">👥 <span>8-10 kishi</span></div>
+                        <div class="info-item">🕐 <span>Haftada 3 kun</span></div>
+                    </div>
+                    <div class="course-curriculum">
+                        <h4>📋 Kurs dasturi:</h4>
+                        <ul>
+                            <li>✓ Murakkab grammatik tuzilmalar</li>
+                            <li>✓ Idiomalar va phrasal verblar</li>
+                            <li>✓ Biznes va akademik yozuv</li>
+                            <li>✓ 3000+ so'z lug'at</li>
+                            <li>✓ Film va seriallar orqali o'rganish</li>
+                        </ul>
+                    </div>
+                    <div class="course-footer">
+                        <div class="course-price">
+                            <small>Oylik to'lov</small>
+                            <strong>900,000 so'm</strong>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Yozilish →</a>
+                    </div>
+                </div>
+
+                <!-- IELTS Preparation -->
+                <div class="course-card featured" data-aos="fade-up" data-aos-delay="200" data-category="english">
+                    <div class="course-badge">⭐ Eng mashhur</div>
+                    <div class="course-card-header">
+                        <span class="course-level advanced">Yuqori</span>
+                        <span class="course-duration">📅 3-6 oy</span>
+                    </div>
+                    <h3>IELTS Preparation</h3>
+                    <p>IELTS imtihoniga professional tayyorgarlik. Reading, Writing, Listening, Speaking bo'limlari.</p>
+                    <div class="course-info">
+                        <div class="info-item">📚 <span>72 dars</span></div>
+                        <div class="info-item">👥 <span>6-8 kishi</span></div>
+                        <div class="info-item">🕐 <span>Haftada 4 kun</span></div>
+                    </div>
+                    <div class="course-curriculum">
+                        <h4>📋 Kurs dasturi:</h4>
+                        <ul>
+                            <li>✓ 4 ta bo'lim bo'yicha intensiv tayyorgarlik</li>
+                            <li>✓ Haftalik Mock testlar va feedback</li>
+                            <li>✓ Individual speaking practice</li>
+                            <li>✓ Essay yozish texnikalari (Task 1 & 2)</li>
+                            <li>✓ Cambridge kitoblari va materiallar</li>
+                        </ul>
+                    </div>
+                    <div class="course-results">
+                        <h4>📊 Natijalar:</h4>
+                        <div class="results-row">
+                            <div class="result-item"><strong>7.5+</strong><span>O'rtacha ball</span></div>
+                            <div class="result-item"><strong>95%</strong><span>Maqsadga erishgan</span></div>
+                            <div class="result-item"><strong>50+</strong><span>Xorijga ketgan</span></div>
+                        </div>
+                    </div>
+                    <div class="course-footer">
+                        <div class="course-price">
+                            <small>Oylik to'lov</small>
+                            <strong>1,200,000 so'm</strong>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Yozilish →</a>
+                    </div>
+                </div>
+
+                <!-- Business English -->
+                <div class="course-card" data-aos="fade-up" data-aos-delay="300" data-category="english">
+                    <div class="course-card-header">
+                        <span class="course-level intermediate">O'rta+</span>
+                        <span class="course-duration">📅 3 oy</span>
+                    </div>
+                    <h3>Business English</h3>
+                    <p>Biznes muhitida ingliz tilidan foydalanish. Prezentatsiyalar, muzokaralar, yozishmalar.</p>
+                    <div class="course-info">
+                        <div class="info-item">📚 <span>36 dars</span></div>
+                        <div class="info-item">👥 <span>6-8 kishi</span></div>
+                        <div class="info-item">🕐 <span>Haftada 2 kun</span></div>
+                    </div>
+                    <div class="course-curriculum">
+                        <h4>📋 Kurs dasturi:</h4>
+                        <ul>
+                            <li>✓ Biznes yozishmalari (email, report, proposal)</li>
+                            <li>✓ Muzokaralar va prezentatsiyalar</li>
+                            <li>✓ Meeting va conference skills</li>
+                            <li>✓ Professional networking</li>
+                            <li>✓ CV va intervyu tayyorgarlik</li>
+                        </ul>
+                    </div>
+                    <div class="course-footer">
+                        <div class="course-price">
+                            <small>Oylik to'lov</small>
+                            <strong>1,000,000 so'm</strong>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Yozilish →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== RUSSIAN COURSES ==================== -->
+    <section class="course-section" id="russian">
+        <div class="container">
+            <div class="course-section-header" data-aos="fade-up">
+                <div class="course-lang-icon">🇷🇺</div>
+                <div>
+                    <h2>Rus tili kurslari</h2>
+                    <p>MDH davlatlarida tahsil va ish uchun • 150+ faol o'quvchi</p>
+                </div>
+            </div>
+
+            <div class="courses-grid">
+                <!-- Russian Beginner -->
+                <div class="course-card" data-aos="fade-up" data-category="russian">
+                    <div class="course-card-header">
+                        <span class="course-level beginner">A1-A2</span>
+                        <span class="course-duration">📅 3-4 oy</span>
+                    </div>
+                    <h3>Rus tili asoslari</h3>
+                    <p>Rus tilini noldan boshlash. Kirill alifbosi, grammatika asoslari va kundalik so'zlashuv.</p>
+                    <div class="course-info">
+                        <div class="info-item">📚 <span>48 dars</span></div>
+                        <div class="info-item">👥 <span>8-10 kishi</span></div>
+                        <div class="info-item">🕐 <span>Haftada 3 kun</span></div>
+                    </div>
+                    <div class="course-curriculum">
+                        <h4>📋 Kurs dasturi:</h4>
+                        <ul>
+                            <li>✓ Kirill alifbosi va talaffuz</li>
+                            <li>✓ Asosiy grammatika (rodlar, kelishiklar)</li>
+                            <li>✓ Kundalik mavzular (tanishuv, oila, ish)</li>
+                            <li>✓ 1500+ so'z lug'at</li>
+                            <li>✓ Audio-video materiallar</li>
+                        </ul>
+                    </div>
+                    <div class="course-footer">
+                        <div class="course-price">
+                            <small>Oylik to'lov</small>
+                            <strong>600,000 so'm</strong>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Yozilish →</a>
+                    </div>
+                </div>
+
+                <!-- Russian Intermediate -->
+                <div class="course-card" data-aos="fade-up" data-aos-delay="100" data-category="russian">
+                    <div class="course-card-header">
+                        <span class="course-level intermediate">B1-B2</span>
+                        <span class="course-duration">📅 4-5 oy</span>
+                    </div>
+                    <h3>O'rta daraja (B1-B2)</h3>
+                    <p>Murakkab grammatika, erkin so'zlashuv va professional rus tili.</p>
+                    <div class="course-info">
+                        <div class="info-item">📚 <span>60 dars</span></div>
+                        <div class="info-item">👥 <span>8-10 kishi</span></div>
+                        <div class="info-item">🕐 <span>Haftada 3 kun</span></div>
+                    </div>
+                    <div class="course-curriculum">
+                        <h4>📋 Kurs dasturi:</h4>
+                        <ul>
+                            <li>✓ Murakkab grammatik tuzilmalar</li>
+                            <li>✓ Badiiy va ilmiy matnlar</li>
+                            <li>✓ Rasmiy va norasmiy uslublar</li>
+                            <li>✓ 4000+ so'z lug'at</li>
+                            <li>✓ Film va adabiyot orqali o'rganish</li>
+                        </ul>
+                    </div>
+                    <div class="course-footer">
+                        <div class="course-price">
+                            <small>Oylik to'lov</small>
+                            <strong>700,000 so'm</strong>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Yozilish →</a>
+                    </div>
+                </div>
+
+                <!-- TORFL -->
+                <div class="course-card" data-aos="fade-up" data-aos-delay="200" data-category="russian">
+                    <div class="course-card-header">
+                        <span class="course-level advanced">TORFL</span>
+                        <span class="course-duration">📅 3 oy</span>
+                    </div>
+                    <h3>TORFL tayyorgarlik</h3>
+                    <p>Rossiya universitetlariga kirish uchun TORFL imtihoniga tayyorgarlik kursi.</p>
+                    <div class="course-info">
+                        <div class="info-item">📚 <span>36 dars</span></div>
+                        <div class="info-item">👥 <span>6-8 kishi</span></div>
+                        <div class="info-item">🕐 <span>Haftada 3 kun</span></div>
+                    </div>
+                    <div class="course-curriculum">
+                        <h4>📋 Kurs dasturi:</h4>
+                        <ul>
+                            <li>✓ Imtihon formati va strategiyalar</li>
+                            <li>✓ Mock testlar va tahlil</li>
+                            <li>✓ Grammatika va leksika takrorlash</li>
+                            <li>✓ Individual konsultatsiyalar</li>
+                            <li>✓ Imtihon ro'yxatidan o'tish yordami</li>
+                        </ul>
+                    </div>
+                    <div class="course-footer">
+                        <div class="course-price">
+                            <small>Oylik to'lov</small>
+                            <strong>850,000 so'm</strong>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Yozilish →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CHINESE COURSES ==================== -->
+    <section class="course-section" id="chinese">
+        <div class="container">
+            <div class="course-section-header" data-aos="fade-up">
+                <div class="course-lang-icon">🇨🇳</div>
+                <div>
+                    <h2>Xitoy tili kurslari</h2>
+                    <p>HSK sertifikati va Xitoyda tahsil imkoniyatlari • 80+ faol o'quvchi</p>
+                </div>
+            </div>
+
+            <div class="courses-grid">
+                <!-- Chinese Beginner -->
+                <div class="course-card" data-aos="fade-up" data-category="chinese">
+                    <div class="course-card-header">
+                        <span class="course-level beginner">HSK 1-2</span>
+                        <span class="course-duration">📅 4-6 oy</span>
+                    </div>
+                    <h3>Xitoy tili asoslari</h3>
+                    <p>Pinyin, asosiy iyerogliflar va kundalik so'zlashuv. Noldan boshlash uchun ideal.</p>
+                    <div class="course-info">
+                        <div class="info-item">📚 <span>72 dars</span></div>
+                        <div class="info-item">👥 <span>6-8 kishi</span></div>
+                        <div class="info-item">🕐 <span>Haftada 3 kun</span></div>
+                    </div>
+                    <div class="course-curriculum">
+                        <h4>📋 Kurs dasturi:</h4>
+                        <ul>
+                            <li>✓ Pinyin va 4 ta ton</li>
+                            <li>✓ 300+ iyeroglif yozish va o'qish</li>
+                            <li>✓ Asosiy grammatika strukturalari</li>
+                            <li>✓ Kundalik so'zlashuv mavzulari</li>
+                            <li>✓ Xitoy madaniyati asoslari</li>
+                        </ul>
+                    </div>
+                    <div class="course-footer">
+                        <div class="course-price">
+                            <small>Oylik to'lov</small>
+                            <strong>900,000 so'm</strong>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Yozilish →</a>
+                    </div>
+                </div>
+
+                <!-- HSK 3-4 -->
+                <div class="course-card featured" data-aos="fade-up" data-aos-delay="100" data-category="chinese">
+                    <div class="course-badge">🔥 Trend</div>
+                    <div class="course-card-header">
+                        <span class="course-level intermediate">HSK 3-4</span>
+                        <span class="course-duration">📅 6-8 oy</span>
+                    </div>
+                    <h3>HSK 3-4 tayyorgarlik</h3>
+                    <p>O'rta daraja. Grant imtihonlari va universitetga kirish uchun zarur daraja.</p>
+                    <div class="course-info">
+                        <div class="info-item">📚 <span>96 dars</span></div>
+                        <div class="info-item">👥 <span>6-8 kishi</span></div>
+                        <div class="info-item">🕐 <span>Haftada 4 kun</span></div>
+                    </div>
+                    <div class="course-curriculum">
+                        <h4>📋 Kurs dasturi:</h4>
+                        <ul>
+                            <li>✓ 1200+ iyeroglif</li>
+                            <li>✓ Murakkab grammatik strukturalar</li>
+                            <li>✓ HSK format testlar va mashqlar</li>
+                            <li>✓ Biznes xitoy tili asoslari</li>
+                            <li>✓ Grant ariza yozish yordami</li>
+                        </ul>
+                    </div>
+                    <div class="course-results">
+                        <h4>📊 Natijalar:</h4>
+                        <div class="results-row">
+                            <div class="result-item"><strong>20+</strong><span>Grant yutganlar</span></div>
+                            <div class="result-item"><strong>90%</strong><span>HSK o'tganlar</span></div>
+                        </div>
+                    </div>
+                    <div class="course-footer">
+                        <div class="course-price">
+                            <small>Oylik to'lov</small>
+                            <strong>1,100,000 so'm</strong>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Yozilish →</a>
+                    </div>
+                </div>
+
+                <!-- HSK 5-6 -->
+                <div class="course-card" data-aos="fade-up" data-aos-delay="200" data-category="chinese">
+                    <div class="course-card-header">
+                        <span class="course-level advanced">HSK 5-6</span>
+                        <span class="course-duration">📅 8-12 oy</span>
+                    </div>
+                    <h3>HSK 5-6 Professional</h3>
+                    <p>Yuqori daraja. Xitoyda ishlash va magistratura uchun zarur sertifikat.</p>
+                    <div class="course-info">
+                        <div class="info-item">📚 <span>120 dars</span></div>
+                        <div class="info-item">👥 <span>4-6 kishi</span></div>
+                        <div class="info-item">🕐 <span>Haftada 4 kun</span></div>
+                    </div>
+                    <div class="course-curriculum">
+                        <h4>📋 Kurs dasturi:</h4>
+                        <ul>
+                            <li>✓ 2500+ iyeroglif</li>
+                            <li>✓ Klassik va zamonaviy adabiyot</li>
+                            <li>✓ Akademik yozuv va tarjima</li>
+                            <li>✓ Professional so'zlashuv</li>
+                            <li>✓ Xitoyda ishlash tayyorgarligi</li>
+                        </ul>
+                    </div>
+                    <div class="course-footer">
+                        <div class="course-price">
+                            <small>Oylik to'lov</small>
+                            <strong>1,300,000 so'm</strong>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Yozilish →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== KOREAN COURSES ==================== -->
+    <section class="course-section" id="korean">
+        <div class="container">
+            <div class="course-section-header" data-aos="fade-up">
+                <div class="course-lang-icon">🇰🇷</div>
+                <div>
+                    <h2>Koreys tili kurslari</h2>
+                    <p>TOPIK sertifikati va Koreyada ish imkoniyatlari • 100+ faol o'quvchi</p>
+                </div>
+            </div>
+
+            <div class="courses-grid">
+                <!-- Korean Beginner -->
+                <div class="course-card" data-aos="fade-up" data-category="korean">
+                    <div class="course-card-header">
+                        <span class="course-level beginner">TOPIK I</span>
+                        <span class="course-duration">📅 4-6 oy</span>
+                    </div>
+                    <h3>Koreys tili asoslari</h3>
+                    <p>Hangul alifbosi, asosiy grammatika va K-pop/K-drama orqali qiziqarli o'rganish.</p>
+                    <div class="course-info">
+                        <div class="info-item">📚 <span>72 dars</span></div>
+                        <div class="info-item">👥 <span>8-10 kishi</span></div>
+                        <div class="info-item">🕐 <span>Haftada 3 kun</span></div>
+                    </div>
+                    <div class="course-curriculum">
+                        <h4>📋 Kurs dasturi:</h4>
+                        <ul>
+                            <li>✓ Hangul alifbosi (1 haftada)</li>
+                            <li>✓ Asosiy grammatika va gap tuzish</li>
+                            <li>✓ Kundalik so'zlashuv iboralari</li>
+                            <li>✓ K-pop va K-drama orqali o'rganish</li>
+                            <li>✓ Koreys madaniyati va odobi</li>
+                        </ul>
+                    </div>
+                    <div class="course-footer">
+                        <div class="course-price">
+                            <small>Oylik to'lov</small>
+                            <strong>850,000 so'm</strong>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Yozilish →</a>
+                    </div>
+                </div>
+
+                <!-- TOPIK II -->
+                <div class="course-card featured" data-aos="fade-up" data-aos-delay="100" data-category="korean">
+                    <div class="course-badge">🔥 Trend</div>
+                    <div class="course-card-header">
+                        <span class="course-level intermediate">TOPIK II</span>
+                        <span class="course-duration">📅 6-10 oy</span>
+                    </div>
+                    <h3>TOPIK II (3-6 daraja)</h3>
+                    <p>Koreyada ishlash va tahsil olish uchun zarur daraja. Intensiv tayyorgarlik kursi.</p>
+                    <div class="course-info">
+                        <div class="info-item">📚 <span>96 dars</span></div>
+                        <div class="info-item">👥 <span>6-8 kishi</span></div>
+                        <div class="info-item">🕐 <span>Haftada 4 kun</span></div>
+                    </div>
+                    <div class="course-curriculum">
+                        <h4>📋 Kurs dasturi:</h4>
+                        <ul>
+                            <li>✓ Murakkab grammatik strukturalar</li>
+                            <li>✓ TOPIK format testlar</li>
+                            <li>✓ Yozma va og'zaki imtihon tayyorgarlik</li>
+                            <li>✓ Biznes koreys tili</li>
+                            <li>✓ Koreyada yashash tayyorgarligi</li>
+                        </ul>
+                    </div>
+                    <div class="course-results">
+                        <h4>📊 Natijalar:</h4>
+                        <div class="results-row">
+                            <div class="result-item"><strong>30+</strong><span>Koreyada ishlamoqda</span></div>
+                            <div class="result-item"><strong>92%</strong><span>TOPIK o'tganlar</span></div>
+                        </div>
+                    </div>
+                    <div class="course-footer">
+                        <div class="course-price">
+                            <small>Oylik to'lov</small>
+                            <strong>1,000,000 so'm</strong>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Yozilish →</a>
+                    </div>
+                </div>
+
+                <!-- EPS-TOPIK -->
+                <div class="course-card" data-aos="fade-up" data-aos-delay="200" data-category="korean">
+                    <div class="course-card-header">
+                        <span class="course-level advanced">EPS-TOPIK</span>
+                        <span class="course-duration">📅 3-4 oy</span>
+                    </div>
+                    <h3>EPS-TOPIK tayyorgarlik</h3>
+                    <p>Koreyada ishlash uchun maxsus dastur. EPS imtihoniga maqsadli tayyorgarlik.</p>
+                    <div class="course-info">
+                        <div class="info-item">📚 <span>60 dars</span></div>
+                        <div class="info-item">👥 <span>10-12 kishi</span></div>
+                        <div class="info-item">🕐 <span>Haftada 5 kun</span></div>
+                    </div>
+                    <div class="course-curriculum">
+                        <h4>📋 Kurs dasturi:</h4>
+                        <ul>
+                            <li>✓ EPS imtihon formati</li>
+                            <li>✓ Tinglash va o'qish bo'limlari</li>
+                            <li>✓ Ishlab chiqarish leksikasi</li>
+                            <li>✓ Koreyada xavfsizlik qoidalari</li>
+                            <li>✓ Mock testlar va tahlil</li>
+                        </ul>
+                    </div>
+                    <div class="course-footer">
+                        <div class="course-price">
+                            <small>Oylik to'lov</small>
+                            <strong>750,000 so'm</strong>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Yozilish →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ARABIC COURSES ==================== -->
+    <section class="course-section" id="arabic">
+        <div class="container">
+            <div class="course-section-header" data-aos="fade-up">
+                <div class="course-lang-icon">🇸🇦</div>
+                <div>
+                    <h2>Arab tili kurslari</h2>
+                    <p>Arab davlatlarida tahsil va ish imkoniyatlari • 60+ faol o'quvchi</p>
+                </div>
+            </div>
+
+            <div class="courses-grid">
+                <!-- Arabic Beginner -->
+                <div class="course-card" data-aos="fade-up" data-category="arabic">
+                    <div class="course-card-header">
+                        <span class="course-level beginner">Boshlang'ich</span>
+                        <span class="course-duration">📅 4-5 oy</span>
+                    </div>
+                    <h3>Arab tili asoslari (Fusha)</h3>
+                    <p>Klassik arab tili. Alifbo, grammatika asoslari va Qur'on o'qish ko'nikmalari.</p>
+                    <div class="course-info">
+                        <div class="info-item">📚 <span>60 dars</span></div>
+                        <div class="info-item">👥 <span>8-10 kishi</span></div>
+                        <div class="info-item">🕐 <span>Haftada 3 kun</span></div>
+                    </div>
+                    <div class="course-curriculum">
+                        <h4>📋 Kurs dasturi:</h4>
+                        <ul>
+                            <li>✓ Arab alifbosi va talaffuz</li>
+                            <li>✓ Asosiy grammatika (sarf va nahv)</li>
+                            <li>✓ Qur'on o'qish asoslari</li>
+                            <li>✓ Kundalik so'zlashuv iboralari</li>
+                            <li>✓ Arab madaniyati va odobi</li>
+                        </ul>
+                    </div>
+                    <div class="course-footer">
+                        <div class="course-price">
+                            <small>Oylik to'lov</small>
+                            <strong>700,000 so'm</strong>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Yozilish →</a>
+                    </div>
+                </div>
+
+                <!-- Arabic Intermediate -->
+                <div class="course-card" data-aos="fade-up" data-aos-delay="100" data-category="arabic">
+                    <div class="course-card-header">
+                        <span class="course-level intermediate">O'rta</span>
+                        <span class="course-duration">📅 5-6 oy</span>
+                    </div>
+                    <h3>Arab tili (O'rta daraja)</h3>
+                    <p>Murakkab grammatika, matn tahlili va erkin so'zlashuv ko'nikmalari.</p>
+                    <div class="course-info">
+                        <div class="info-item">📚 <span>72 dars</span></div>
+                        <div class="info-item">👥 <span>6-8 kishi</span></div>
+                        <div class="info-item">🕐 <span>Haftada 3 kun</span></div>
+                    </div>
+                    <div class="course-curriculum">
+                        <h4>📋 Kurs dasturi:</h4>
+                        <ul>
+                            <li>✓ Murakkab grammatik qoidalar</li>
+                            <li>✓ Adabiy matnlar tahlili</li>
+                            <li>✓ Yozma va og'zaki tarjima</li>
+                            <li>✓ Media arab tili (yangiliklar)</li>
+                            <li>✓ 3000+ so'z lug'at</li>
+                        </ul>
+                    </div>
+                    <div class="course-footer">
+                        <div class="course-price">
+                            <small>Oylik to'lov</small>
+                            <strong>850,000 so'm</strong>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Yozilish →</a>
+                    </div>
+                </div>
+
+                <!-- Arabic Dialect -->
+                <div class="course-card" data-aos="fade-up" data-aos-delay="200" data-category="arabic">
+                    <div class="course-card-header">
+                        <span class="course-level intermediate">Dialekt</span>
+                        <span class="course-duration">📅 3 oy</span>
+                    </div>
+                    <h3>Arab dialektlari (Amiyya)</h3>
+                    <p>Misr, Shom yoki Ko'rfaz dialektlari. Arab davlatlarida yashash va ishlash uchun.</p>
+                    <div class="course-info">
+                        <div class="info-item">📚 <span>36 dars</span></div>
+                        <div class="info-item">👥 <span>6-8 kishi</span></div>
+                        <div class="info-item">🕐 <span>Haftada 2 kun</span></div>
+                    </div>
+                    <div class="course-curriculum">
+                        <h4>📋 Kurs dasturi:</h4>
+                        <ul>
+                            <li>✓ Dialekt xususiyatlari</li>
+                            <li>✓ Kundalik so'zlashuv</li>
+                            <li>✓ Bozor va ish muhiti leksikasi</li>
+                            <li>✓ Film va qo'shiqlar orqali o'rganish</li>
+                            <li>✓ Amaliy mashg'ulotlar</li>
+                        </ul>
+                    </div>
+                    <div class="course-footer">
+                        <div class="course-price">
+                            <small>Oylik to'lov</small>
+                            <strong>800,000 so'm</strong>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Yozilish →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Individual Lessons -->
+    <section class="section individual-section">
+        <div class="container">
+            <div class="individual-card" data-aos="fade-up">
+                <div class="individual-content">
+                    <span class="section-badge">Premium</span>
+                    <h2>Individual darslar</h2>
+                    <p>Shaxsiy jadval, tezlashtirilgan natija va 100% e'tibor sizga. Barcha tillar uchun individual darslar mavjud.</p>
+                    <div class="individual-features">
+                        <div class="ind-feature">✓ Moslashuvchan jadval</div>
+                        <div class="ind-feature">✓ Shaxsiy dastur</div>
+                        <div class="ind-feature">✓ Tez natija</div>
+                        <div class="ind-feature">✓ Online/Offline</div>
+                    </div>
+                    <div class="individual-price">
+                        <span>1 soatlik dars:</span>
+                        <strong>150,000 - 250,000 so'm</strong>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary btn-lg">Konsultatsiya olish →</a>
+                </div>
+                <div class="individual-image">
+                    <div class="image-placeholder">👨‍🏫<p>1:1 darslar</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Qaysi kursni tanlashni <span class="gradient-text">bilmayapsizmi?</span></h2>
+                <p>Bepul konsultatsiya oling va o'zingizga mos kursni toping. Biz sizga yordam beramiz!</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-lg">Bepul konsultatsiya →</a>
+                    <a href="tel:+998901234567" class="btn btn-secondary btn-lg">📞 +998 90 123 45 67</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">📚 <span>Azimova School</span></a>
+                    <p>Toshkentning eng ishonchli til o'rgatish markazi. 2019-yildan beri minglab o'quvchilarga til o'rgatib kelmoqdamiz.</p>
+                    <div class="footer-social"><a href="#">📱</a><a href="#">📷</a><a href="#">👤</a><a href="#">▶️</a></div>
+                </div>
+                <div class="footer-column">
+                    <h4>Tillar</h4>
+                    <ul>
+                        <li><a href="#english">🇬🇧 Ingliz tili</a></li>
+                        <li><a href="#russian">🇷🇺 Rus tili</a></li>
+                        <li><a href="#chinese">🇨🇳 Xitoy tili</a></li>
+                        <li><a href="#korean">🇰🇷 Koreys tili</a></li>
+                        <li><a href="#arabic">🇸🇦 Arab tili</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Sahifalar</h4>
+                    <ul>
+                        <li><a href="index.html">Bosh sahifa</a></li>
+                        <li><a href="courses.html">Kurslar</a></li>
+                        <li><a href="about.html">Biz haqimizda</a></li>
+                        <li><a href="contact.html">Aloqa</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Aloqa</h4>
+                    <ul>
+                        <li>📍 Toshkent sh., Chilonzor tumani</li>
+                        <li>📞 <a href="tel:+998901234567">+998 90 123 45 67</a></li>
+                        <li>📧 <a href="mailto:info@azimovaschool.uz">info@azimovaschool.uz</a></li>
+                        <li>🕐 Dush-Shan: 9:00 - 21:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Azimova School. Barcha huquqlar himoyalangan.</p>
+                <p>Toshkent, O'zbekiston 🇺🇿</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll & Float -->
+    <button class="scroll-top" id="scrollTop">↑</button>
+    <div class="float-contact">
+        <a href="https://t.me/azimovaschool" class="float-btn telegram">📱</a>
+        <a href="tel:+998901234567" class="float-btn phone">📞</a>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

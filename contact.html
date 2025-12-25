@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aloqa - Azimova School | Til O'rganish Markazi</title>
+    <meta name="description" content="Azimova School bilan bog'laning. Bepul konsultatsiya, sinov darsi va ro'yxatdan o'tish. Toshkent, Chilonzor.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Onest:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-animation"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">📚 <span>Azimova School</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Bosh sahifa</a></li>
+                <li><a href="courses.html">Kurslar</a></li>
+                <li><a href="about.html">Biz haqimizda</a></li>
+                <li><a href="contact.html" class="active">Aloqa</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="tel:+998901234567" class="nav-phone">📞 +998 90 123 45 67</a>
+                <a href="contact.html" class="btn btn-primary btn-sm">Ro'yxatdan o'tish</a>
+            </div>
+            <div class="mobile-menu-btn" id="mobileMenuBtn"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu-overlay" id="mobileOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-menu-close" id="mobileClose">×</button>
+        <div class="mobile-logo">📚 Azimova School</div>
+        <ul>
+            <li><a href="index.html">Bosh sahifa</a></li>
+            <li><a href="courses.html">Kurslar</a></li>
+            <li><a href="about.html">Biz haqimizda</a></li>
+            <li><a href="contact.html">Aloqa</a></li>
+        </ul>
+    </div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Bosh sahifa</a> / <span>Aloqa</span>
+            </div>
+            <h1>Biz bilan <span class="gradient-text">bog'laning</span></h1>
+            <p>Savollaringiz bormi? Bepul konsultatsiya yoki sinov darsiga yozilmoqchimisiz? Biz bilan bog'laning!</p>
+        </div>
+    </section>
+
+    <!-- Contact Info Cards -->
+    <section class="section contact-cards-section">
+        <div class="container">
+            <div class="contact-cards-grid">
+                <div class="contact-card" data-aos="fade-up">
+                    <div class="contact-card-icon">📍</div>
+                    <h3>Manzil</h3>
+                    <p>Toshkent shahri, Chilonzor tumani, 1-mavze, 15-uy</p>
+                    <a href="https://maps.google.com" target="_blank" class="contact-card-link">Xaritada ko'rish →</a>
+                </div>
+                <div class="contact-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="contact-card-icon">📞</div>
+                    <h3>Telefon</h3>
+                    <p>+998 90 123 45 67<br>+998 91 234 56 78</p>
+                    <a href="tel:+998901234567" class="contact-card-link">Qo'ng'iroq qilish →</a>
+                </div>
+                <div class="contact-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-card-icon">📧</div>
+                    <h3>Email</h3>
+                    <p>info@azimovaschool.uz<br>admin@azimovaschool.uz</p>
+                    <a href="mailto:info@azimovaschool.uz" class="contact-card-link">Email yuborish →</a>
+                </div>
+                <div class="contact-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="contact-card-icon">🕐</div>
+                    <h3>Ish vaqti</h3>
+                    <p>Dushanba - Shanba<br>09:00 - 21:00</p>
+                    <span class="contact-card-status open">Hozir ochiq</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Info -->
+    <section class="section contact-main-section" id="form">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div class="contact-info-wrapper" data-aos="fade-right">
+                    <div class="contact-info-card">
+                        <h3>🎯 Bepul sinov darsi</h3>
+                        <p>Formani to'ldiring yoki qo'ng'iroq qiling - biz siz bilan 24 soat ichida bog'lanamiz va bepul sinov darsiga yozamiz.</p>
+                        
+                        <div class="contact-benefits">
+                            <div class="benefit-item">
+                                <span class="benefit-icon">✓</span>
+                                <span>Bepul daraja aniqlash testi</span>
+                            </div>
+                            <div class="benefit-item">
+                                <span class="benefit-icon">✓</span>
+                                <span>Bepul sinov darsi</span>
+                            </div>
+                            <div class="benefit-item">
+                                <span class="benefit-icon">✓</span>
+                                <span>Individual konsultatsiya</span>
+                            </div>
+                            <div class="benefit-item">
+                                <span class="benefit-icon">✓</span>
+                                <span>Kurs tanlashda yordam</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-direct">
+                            <h4>Tezkor aloqa:</h4>
+                            <div class="direct-buttons">
+                                <a href="tel:+998901234567" class="direct-btn phone">
+                                    <span>📞</span>
+                                    <span>Qo'ng'iroq</span>
+                                </a>
+                                <a href="https://t.me/azimovaschool" class="direct-btn telegram">
+                                    <span>📱</span>
+                                    <span>Telegram</span>
+                                </a>
+                                <a href="https://instagram.com/azimovaschool" class="direct-btn instagram">
+                                    <span>📷</span>
+                                    <span>Instagram</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="social-card">
+                        <h4>Ijtimoiy tarmoqlar</h4>
+                        <p>Bizni kuzatib boring va eng so'nggi yangiliklar, chegirmalar va foydali materiallardan xabardor bo'ling!</p>
+                        <div class="social-links-grid">
+                            <a href="#" class="social-link-item telegram">
+                                <span class="social-icon">📱</span>
+                                <div>
+                                    <strong>Telegram</strong>
+                                    <small>@azimovaschool</small>
+                                </div>
+                            </a>
+                            <a href="#" class="social-link-item instagram">
+                                <span class="social-icon">📷</span>
+                                <div>
+                                    <strong>Instagram</strong>
+                                    <small>@azimovaschool</small>
+                                </div>
+                            </a>
+                            <a href="#" class="social-link-item facebook">
+                                <span class="social-icon">👤</span>
+                                <div>
+                                    <strong>Facebook</strong>
+                                    <small>Azimova School</small>
+                                </div>
+                            </a>
+                            <a href="#" class="social-link-item youtube">
+                                <span class="social-icon">▶️</span>
+                                <div>
+                                    <strong>YouTube</strong>
+                                    <small>Azimova School</small>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper" data-aos="fade-left">
+                    <div class="contact-form-card">
+                        <h3>📝 Ro'yxatdan o'tish</h3>
+                        <p>Formani to'ldiring, biz siz bilan tez orada bog'lanamiz</p>
+                        
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">Ismingiz *</label>
+                                    <input type="text" id="firstName" name="firstName" placeholder="Ismingizni kiriting" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Familiyangiz *</label>
+                                    <input type="text" id="lastName" name="lastName" placeholder="Familiyangizni kiriting" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phone">Telefon raqam *</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="+998 90 123 45 67" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email (ixtiyoriy)</label>
+                                    <input type="email" id="email" name="email" placeholder="email@example.com">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="language">Qaysi tilni o'rganmoqchisiz? *</label>
+                                <select id="language" name="language" required>
+                                    <option value="">Tilni tanlang</option>
+                                    <option value="english">🇬🇧 Ingliz tili</option>
+                                    <option value="russian">🇷🇺 Rus tili</option>
+                                    <option value="chinese">🇨🇳 Xitoy tili</option>
+                                    <option value="korean">🇰🇷 Koreys tili</option>
+                                    <option value="arabic">🇸🇦 Arab tili</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="level">Hozirgi darajangiz</label>
+                                <select id="level" name="level">
+                                    <option value="">Darajangizni tanlang</option>
+                                    <option value="zero">Noldan boshlayman</option>
+                                    <option value="beginner">Boshlang'ich (A1-A2)</option>
+                                    <option value="intermediate">O'rta (B1-B2)</option>
+                                    <option value="advanced">Yuqori (C1-C2)</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="goal">Maqsadingiz</label>
+                                <select id="goal" name="goal">
+                                    <option value="">Maqsadingizni tanlang</option>
+                                    <option value="general">Umumiy bilim</option>
+                                    <option value="ielts">IELTS/TOEFL</option>
+                                    <option value="topik">TOPIK</option>
+                                    <option value="hsk">HSK</option>
+                                    <option value="work">Xorijda ishlash</option>
+                                    <option value="study">Xorijda o'qish</option>
+                                    <option value="business">Biznes uchun</option>
+                                    <option value="other">Boshqa</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="format">O'qish formati</label>
+                                <div class="radio-group">
+                                    <label class="radio-item">
+                                        <input type="radio" name="format" value="offline" checked>
+                                        <span class="radio-label">🏫 Offline (Markazda)</span>
+                                    </label>
+                                    <label class="radio-item">
+                                        <input type="radio" name="format" value="online">
+                                        <span class="radio-label">💻 Online (Zoom)</span>
+                                    </label>
+                                    <label class="radio-item">
+                                        <input type="radio" name="format" value="both">
+                                        <span class="radio-label">🔄 Aralash</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Qo'shimcha ma'lumot</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Savollaringiz yoki qo'shimcha ma'lumot..."></textarea>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="agree" required>
+                                    <span class="checkbox-label">Shaxsiy ma'lumotlarimni qayta ishlashga roziman</span>
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-lg btn-block">
+                                <span>Yuborish</span>
+                                <span class="btn-icon">→</span>
+                            </button>
+
+                            <p class="form-note">* Biz siz bilan 24 soat ichida bog'lanamiz</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="section map-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Joylashuv</span>
+                <h2>Bizning <span class="gradient-text">manzilimiz</span></h2>
+                <p>Toshkent shahri, Chilonzor tumani, 1-mavze, 15-uy</p>
+            </div>
+
+            <div class="map-wrapper" data-aos="fade-up">
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.5234567890123!2d69.2034567!3d41.2834567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDE3JzAwLjQiTiA2OcKwMTInMTIuNCJF!5e0!3m2!1suz!2sus!4v1234567890123"
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="map-info">
+                    <div class="map-info-item">
+                        <span class="map-icon">🚇</span>
+                        <div>
+                            <strong>Metro</strong>
+                            <p>Chilonzor metro bekatidan 5 daqiqa piyoda</p>
+                        </div>
+                    </div>
+                    <div class="map-info-item">
+                        <span class="map-icon">🚌</span>
+                        <div>
+                            <strong>Avtobus</strong>
+                            <p>35, 67, 94-marshrutlar "Chilonzor bozori" bekati</p>
+                        </div>
+                    </div>
+                    <div class="map-info-item">
+                        <span class="map-icon">🚗</span>
+                        <div>
+                            <strong>Mashina</strong>
+                            <p>Bepul avtoturargoh mavjud</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Savollar</span>
+                <h2>Tez-tez so'raladigan <span class="gradient-text">savollar</span></h2>
+            </div>
+
+            <div class="faq-list" data-aos="fade-up">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Sinov darsi qanday o'tadi?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sinov darsi 45-60 daqiqa davom etadi. Darsda siz ustoz bilan tanishasiz, o'qitish metodikasini ko'rasiz, bepul daraja aniqlash testini topshirasiz va o'zingizga mos kurs haqida maslahat olasiz. Hech qanday majburiyat yo'q!</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Qancha vaqt ichida javob olaman?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Biz odatda 2-3 soat ichida, ish vaqtida esa 30 daqiqa ichida javob beramiz. Agar formani ish vaqtidan tashqarida to'ldirsangiz, ertasi kuni ertalab siz bilan bog'lanamiz.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Online darslar qanday o'tadi?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Online darslar Zoom platformasi orqali o'tadi. Sizga faqat kompyuter/telefon va internet kerak. Darslar offline darslardek interaktiv o'tadi, ekranni ulashish, virtual doskadan foydalanish imkoniyatlari bor.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>To'lovni qanday amalga oshiraman?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>To'lovni quyidagi usullarda amalga oshirishingiz mumkin: naqd pul, Click, Payme, Uzum Bank kartasi orqali. Oylik yoki to'liq kurs uchun to'lash mumkin. Bo'lib to'lash imkoniyati ham mavjud.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Guruhlar qachon boshlanadi?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yangi guruhlar har oy boshida ochiladi. Ammo, guruh to'lgach, keyingi guruhga kutish kerak bo'lishi mumkin. Shuning uchun oldindan ro'yxatdan o'tishni maslahat beramiz!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Hali savollaringiz <span class="gradient-text">bormi?</span></h2>
+                <p>Bizga qo'ng'iroq qiling - barcha savollaringizga javob beramiz!</p>
+                <div class="cta-buttons">
+                    <a href="tel:+998901234567" class="btn btn-primary btn-lg">📞 +998 90 123 45 67</a>
+                    <a href="https://t.me/azimovaschool" class="btn btn-secondary btn-lg">📱 Telegram</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">📚 <span>Azimova School</span></a>
+                    <p>Toshkentning eng ishonchli til o'rgatish markazi. 2019-yildan beri minglab o'quvchilarga til o'rgatib kelmoqdamiz.</p>
+                    <div class="footer-social"><a href="#">📱</a><a href="#">📷</a><a href="#">👤</a><a href="#">▶️</a></div>
+                </div>
+                <div class="footer-column">
+                    <h4>Tillar</h4>
+                    <ul>
+                        <li><a href="courses.html#english">🇬🇧 Ingliz tili</a></li>
+                        <li><a href="courses.html#russian">🇷🇺 Rus tili</a></li>
+                        <li><a href="courses.html#chinese">🇨🇳 Xitoy tili</a></li>
+                        <li><a href="courses.html#korean">🇰🇷 Koreys tili</a></li>
+                        <li><a href="courses.html#arabic">🇸🇦 Arab tili</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Sahifalar</h4>
+                    <ul>
+                        <li><a href="index.html">Bosh sahifa</a></li>
+                        <li><a href="courses.html">Kurslar</a></li>
+                        <li><a href="about.html">Biz haqimizda</a></li>
+                        <li><a href="contact.html">Aloqa</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Aloqa</h4>
+                    <ul>
+                        <li>📍 Toshkent sh., Chilonzor tumani</li>
+                        <li>📞 <a href="tel:+998901234567">+998 90 123 45 67</a></li>
+                        <li>📧 <a href="mailto:info@azimovaschool.uz">info@azimovaschool.uz</a></li>
+                        <li>🕐 Dush-Shan: 9:00 - 21:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Azimova School. Barcha huquqlar himoyalangan.</p>
+                <p>Toshkent, O'zbekiston 🇺🇿</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll & Float -->
+    <button class="scroll-top" id="scrollTop">↑</button>
+    <div class="float-contact">
+        <a href="https://t.me/azimovaschool" class="float-btn telegram">📱</a>
+        <a href="tel:+998901234567" class="float-btn phone">📞</a>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <div class="modal-icon">✅</div>
+            <h3>Rahmat!</h3>
+            <p>Sizning so'rovingiz qabul qilindi. Biz siz bilan tez orada bog'lanamiz!</p>
+            <button class="btn btn-primary" onclick="closeModal()">Yopish</button>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
