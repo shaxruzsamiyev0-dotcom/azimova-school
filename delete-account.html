@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akkauntni O'chirish - Bilimdon</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #673AB7 0%, #9C27B0 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .header p {
+            opacity: 0.9;
+            font-size: 1rem;
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        .warning-box {
+            background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+            border-left: 4px solid #ff9800;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .warning-box h3 {
+            color: #e65100;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .warning-box ul {
+            margin-left: 20px;
+            color: #bf360c;
+        }
+
+        .warning-box li {
+            margin-bottom: 5px;
+        }
+
+        .info-section {
+            margin-bottom: 30px;
+        }
+
+        .info-section h2 {
+            color: #673AB7;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0e6ff;
+        }
+
+        .info-section p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .data-list {
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+
+        .data-list h4 {
+            color: #673AB7;
+            margin-bottom: 10px;
+        }
+
+        .data-list ul {
+            margin-left: 20px;
+        }
+
+        .data-list li {
+            margin-bottom: 8px;
+        }
+
+        .form-section {
+            background: linear-gradient(135deg, #f5f0ff 0%, #ede7f6 100%);
+            padding: 25px;
+            border-radius: 15px;
+            margin-top: 30px;
+        }
+
+        .form-section h3 {
+            color: #673AB7;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #673AB7;
+        }
+
+        .form-group textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #d32f2f 0%, #b71c1c 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(211, 47, 47, 0.4);
+        }
+
+        .alternative-box {
+            background: #e3f2fd;
+            border-left: 4px solid #2196f3;
+            padding: 20px;
+            margin-top: 25px;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .alternative-box h4 {
+            color: #1565c0;
+            margin-bottom: 10px;
+        }
+
+        .alternative-box a {
+            color: #1565c0;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .alternative-box a:hover {
+            text-decoration: underline;
+        }
+
+        .timeline {
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .timeline h4 {
+            color: #673AB7;
+            margin-bottom: 15px;
+        }
+
+        .timeline-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+
+        .timeline-icon {
+            width: 30px;
+            height: 30px;
+            background: #673AB7;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 25px;
+            background: #f8f9fa;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .footer a {
+            color: #673AB7;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            .header {
+                padding: 30px 20px;
+            }
+
+            .header h1 {
+                font-size: 1.5rem;
+            }
+
+            .content {
+                padding: 25px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🗑️ Akkauntni O'chirish</h1>
+            <p>Bilimdon - Test Yaratish Ilovasi</p>
+        </div>
+
+        <div class="content">
+            <div class="warning-box">
+                <h3>⚠️ Diqqat!</h3>
+                <p>Akkauntni o'chirish qaytarib bo'lmaydigan jarayondir. O'chirilgandan so'ng:</p>
+                <ul>
+                    <li>Barcha shaxsiy ma'lumotlaringiz o'chiriladi</li>
+                    <li>Yaratgan savollaringiz o'chiriladi</li>
+                    <li>Saqlangan variantlaringiz o'chiriladi</li>
+                    <li>Kirish kalitingiz bekor qilinadi</li>
+                </ul>
+            </div>
+
+            <div class="info-section">
+                <h2>📋 O'chiriladigan Ma'lumotlar</h2>
+                <p>Akkauntingiz o'chirilganda quyidagi ma'lumotlar tizimdan butunlay o'chiriladi:</p>
+                
+                <div class="data-list">
+                    <h4>Shaxsiy ma'lumotlar:</h4>
+                    <ul>
+                        <li>To'liq ismingiz</li>
+                        <li>Elektron pochta manzilingiz</li>
+                        <li>Telefon raqamingiz</li>
+                        <li>Ro'yxatdan o'tgan sana</li>
+                    </ul>
+                </div>
+
+                <div class="data-list">
+                    <h4>Ilova ma'lumotlari:</h4>
+                    <ul>
+                        <li>Siz yaratgan barcha savollar</li>
+                        <li>Saqlangan test variantlari</li>
+                        <li>Foydalanish tarixi</li>
+                        <li>Kirish kaliti va sessiya ma'lumotlari</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <h2>⏱️ O'chirish Jarayoni</h2>
+                <div class="timeline">
+                    <h4>Qanday amalga oshiriladi:</h4>
+                    <div class="timeline-item">
+                        <div class="timeline-icon">1</div>
+                        <div>Quyidagi formani to'ldiring va so'rov yuboring</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon">2</div>
+                        <div>Biz 24-48 soat ichida so'rovingizni ko'rib chiqamiz</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon">3</div>
+                        <div>Tasdiqlash uchun emailingizga xabar yuboramiz</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon">4</div>
+                        <div>Tasdiqlangandan so'ng 7 kun ichida ma'lumotlar o'chiriladi</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h3>📝 O'chirish So'rovi</h3>
+                <form action="mailto:shaxruzsamiyev0@gmail.com" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="fullname">To'liq ismingiz *</label>
+                        <input type="text" id="fullname" name="fullname" required placeholder="Ismingizni kiriting">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Elektron pochta *</label>
+                        <input type="email" id="email" name="email" required placeholder="Ro'yxatdan o'tgan emailingiz">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Telefon raqami</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+998 XX XXX XX XX">
+                    </div>
+                    <div class="form-group">
+                        <label for="reason">O'chirish sababi (ixtiyoriy)</label>
+                        <textarea id="reason" name="reason" placeholder="Nima uchun akkauntingizni o'chirmoqchisiz?"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">🗑️ Akkauntni O'chirishni So'rash</button>
+                </form>
+            </div>
+
+            <div class="alternative-box">
+                <h4>💡 Boshqa variant</h4>
+                <p>Formadan foydalanishda muammo bo'lsa, to'g'ridan-to'g'ri email yuboring:</p>
+                <p>📧 <a href="mailto:shaxruzsamiyev0@gmail.com?subject=Akkauntni o'chirish so'rovi - EduTest Pro">shaxruzsamiyev0@gmail.com</a></p>
+                <p style="margin-top: 10px; font-size: 0.9rem;">Email mavzusiga "Akkauntni o'chirish so'rovi" deb yozing va ismingiz, emailingizni ko'rsating.</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2025 EduTest Pro. Barcha huquqlar himoyalangan.</p>
+            <p style="margin-top: 10px;">
+                <a href="privacy-policy.html">Maxfiylik siyosati</a> | 
+                Azimova School | Toshkent, O'zbekiston
+            </p>
+        </div>
+    </div>
+</body>
+</html>
